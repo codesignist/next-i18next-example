@@ -1,0 +1,7 @@
+{
+  "h1": "Basit bir örnek",
+  "change-locale": "Dil değiştir",
+  "to-second-page": "İkinci sayfa",
+  "error-with-status": "Sunucuda {{statusCode}} koldu bir hata oluştu",
+  "error-without-status": "Sunucuda bir hata oluştu"
+}
