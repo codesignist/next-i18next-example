@@ -42,6 +42,12 @@ const Header = ({ t, title }) => (
       <Link href="/news">
         <button type="button">{t("news")}</button>
       </Link>
+      <Link href="/news/[id]" as="/news/1">
+        <button type="button">{t("news")} / 1</button>
+      </Link>
+      <Link href="/news/[id]" as="/news/2">
+        <button type="button">{t("news")} / 2</button>
+      </Link>
     </div>
     <h1>{title}</h1>
     <a className="github" href="//github.com/isaachinman/next-i18next">
