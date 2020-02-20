@@ -10,6 +10,6 @@ module.exports = new NextI18Next({
   otherLanguages: ["en", "de"],
   localeSubpaths: {
     en: "en",
-    ar: "de"
+    de: "de"
   }
 });
