@@ -1,5 +1,6 @@
 {
   "h1": "Basit bir örnek",
+  "news": "Haberler",
   "change-locale": "Dil değiştir",
   "to-second-page": "İkinci sayfa",
   "error-with-status": "Sunucuda {{statusCode}} koldu bir hata oluştu",

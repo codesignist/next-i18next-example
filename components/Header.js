@@ -3,8 +3,10 @@ import PropTypes from "prop-types";
 
 import Head from "next/head";
 
-const Header = ({ title }) => (
-  <React.Fragment>
+import { Link, withTranslation } from "../i18n";
+
+const Header = ({ t, title }) => (
+  <>
     <Head>
       <title>next-i18next</title>
 
@@ -28,19 +30,28 @@ const Header = ({ title }) => (
         href="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-L9iS6Wm2hynS5H9Gj7j%2Favatar.png?generation=1523462254548780&amp;alt=media"
       />
     </Head>
+
     <h2>
       next-i18next
       <hr />
     </h2>
+    <div>
+      <Link href="/second-page">
+        <button type="button">{t("to-second-page")}</button>
+      </Link>
+      <Link href="/news">
+        <button type="button">{t("news")}</button>
+      </Link>
+    </div>
     <h1>{title}</h1>
     <a className="github" href="//github.com/isaachinman/next-i18next">
       <i className="typcn typcn-social-github-circular" />
     </a>
-  </React.Fragment>
+  </>
 );
 
 Header.propTypes = {
   title: PropTypes.string.isRequired
 };
 
-export default Header;
+export default withTranslation("common")(Header);
